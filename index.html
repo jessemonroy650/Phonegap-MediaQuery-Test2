@@ -11,16 +11,16 @@
     .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
     #header {margin:0;padding:0;}
     #exitApp {margin:1em;float:right;}
-	#test_image {width:300;float:left;}
-	@media screen and (max-device-width:640px) {
-		#test_image {width:200;float:right;}
-	}
-	@media screen and (max-device-width:480px) {
-		#test_image {width:150px;float:left;}
-	}
-	@media screen and (max-device-width:320px) {
-		#test_image {width:100px;float:right;}
-	}
+    #test_image {width:300;float:left;}
+    @media screen and (max-device-width:640px) {
+    	#test_image {width:200;float:right;}
+    }
+    @media screen and (max-device-width:480px) {
+    	#test_image {width:150px;float:left;}
+    }
+    @media screen and (max-device-width:320px) {
+    	#test_image {width:100px;float:right;}
+    }
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript">
@@ -35,7 +35,7 @@
         alert("device ready.");
         if (device.platform === "iOS") {
             alert("got iOS.");
-	        // hide Exit button. They don't have one on iOS devices.
+            // hide Exit button. They don't have one on iOS devices.
             // http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
             document.getElementById('exitApp').classList.add("hidden");
             /* deals with post-iOS-7 change that covers the status bar */
